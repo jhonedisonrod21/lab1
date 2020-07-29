@@ -23,7 +23,7 @@ do
         sshpass -p '123' ssh "root@${vm_ip_adress}" "
             node > /dev/null || echo 'nodejs no instalado en el sistema instalando...' && curl -sL https://deb.nodesource.com/setup_14.x > /dev/null && apt-get install -y nodejs
             cd /
-            nohup killall node || echo '****** El servicio no esta funcionando ****** '
+            nohup killall node || echo '****** El servicio no esta activo ******'
             rm -r lab1
             git clone ${repositorio} && echo '****** Clonando el repositorio ******'
             cd lab1
