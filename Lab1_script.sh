@@ -9,7 +9,7 @@ echo "
 "
 repositorio='https://github.com/jhonedisonrod21/lab1.git'
 vm_ip_adress='192.168.1.15'
-sshpass >> /dev/null || echo "no se encontro sshpass en el sistema, instalando" && sudo apt-get install -y sshpass >> /dev/null || echo 'no se pudo instalar el sshpass'
+sshpass >> /dev/null || echo "no se encontro sshpass en el sistema, instalando..." && sudo apt-get install -y sshpass >> /dev/null || echo 'no se pudo instalar el sshpass'
 responcetime="0,000000"
 # hacemos una funcion para hacer las peticiones HTTP a la maquina virtual
 healtcheck(){
